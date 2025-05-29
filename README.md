@@ -1,38 +1,47 @@
-<p align="center">
-<a href="https://free5gc.org"><img width="40%" src="https://forum.free5gc.org/uploads/default/original/1X/324695bfc6481bd556c11018f2834086cf5ec645.png" alt="free5GC"/></a>
-</p>
+# free5GC - UPF Separado (Topologia Customizada)
 
-<p align="center">
-<a href="https://github.com/free5gc/free5gc/releases"><img src="https://img.shields.io/github/v/release/free5gc/free5gc?color=orange" alt="Release"/></a>
-<a href="https://github.com/free5gc/free5gc/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/free5gc/free5gc?color=blue" alt="License"/></a>
-<a href="https://forum.free5gc.org"><img src="https://img.shields.io/discourse/topics?server=https%3A%2F%2Fforum.free5gc.org&color=lightblue" alt="Forum"/></a>
-<a href="https://www.codefactor.io/repository/github/free5gc/free5gc"><img src="https://www.codefactor.io/repository/github/free5gc/free5gc/badge" alt="CodeFactor" /></a>
-<a href="https://goreportcard.com/report/github.com/free5gc/free5gc"><img src="https://goreportcard.com/badge/github.com/free5gc/free5gc" alt="Go Report Card" /></a>
-<a href="https://github.com/free5gc/free5gc/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen" alt="PRs Welcome"/></a>
-<a href="https://www.bestpractices.dev/projects/9435"><img src="https://www.bestpractices.dev/projects/9435/badge"></a>
-</p>
+Este repositório é uma modificação do projeto open source [free5GC](https://github.com/free5gc/free5gc), com o objetivo de separar a UPF (User Plane Function) da VM principal do núcleo do 5G. Essa separação permite uma arquitetura mais modular, próxima de ambientes reais de telecomunicações, facilitando testes de desempenho e escalabilidade.
 
-## What is free5GC
+---
 
-The free5GC (a Linux Foundation project) is an open-source project for 5th generation (5G) mobile core networks. The ultimate goal of this project is to implement the 5G core network (5GC) defined in 3GPP Release 15 (R15) and beyond.
+## 🧪 Contexto do projeto
 
-For more information, please refer to [free5GC official site](https://free5gc.org/).
+Este trabalho foi desenvolvido por Ícaro de Paiva Rocha durante uma Iniciação Científica no Laboratório Labora da Universidade Federal de Goiás (UFG), com foco em arquitetura de redes 5G, virtualização e desagregação do plano de controle e plano de usuário.
 
-## Documentation
+---
 
-For document, please refer to [free5gc.org/guide/](https://free5gc.org/guide/).
+## 🔧 Alterações principais
 
-## Discussion
+- Separação da UPF em uma VM dedicada (VM3);
+- VM2 mantém os demais componentes do núcleo do 5GC;
+- Configuração de múltiplas bridges virtuais para roteamento (br-main, br-core-UPF, xenbr0, etc.);
+- Design modular com múltiplas interfaces por VM;
+- Topologia adaptada para testes acadêmicos e laboratoriais.
 
-For questions and support please use the [official forum](https://forum.free5gc.org). The issue list of this repo is exclusively for bug reports and feature requests.
+---
 
-## Contributing
+## 🖼️ Topologia da rede
 
-We welcome you for contribution via [GitHub Pull Request](https://github.com/free5gc/free5gc/pulls).
+![Topologia](./Topology.png)
 
-## Release Note
+---
 
-Detailed changes for each release are documented in the release notes. Detailed changes for each release are documented in the [release notes](https://github.com/free5gc/free5gc/releases).
+## 💻 Requisitos
+
+- Ubuntu Server (20.04 ou 22.04 recomendado)
+- KVM/QEMU com virt-manager ou virsh
+- Mínimo de 3 VMs (UE/RAN, Core, UPF)
+- Docker e Go (para compilação dos componentes do free5GC)
+
+---
+
+## 🚀 Como usar
+
+1. Clone este repositório:
+
+   ```bash
+   git clone https://github.com/seu-usuario/free5gc-upf-separated.git
+   cd free5gc-upf-separated
 
 ## License
 
