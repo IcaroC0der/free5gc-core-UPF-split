@@ -85,7 +85,9 @@ OBS: Esse procedimento deve ser executados nas duas VM's
 
 1. Entre no diretório do free5gc
 
+
 	cd free5gc
+
 
 2. Retire a upf do campo GO_NF (como mostra a figura abaixo):
 
