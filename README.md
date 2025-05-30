@@ -80,15 +80,15 @@ OBS: Esse procedimento deve ser executados nas duas VM's
 ### 1. Clone o repositório do free5gc em cada VM (Core e UPF):
 
 ```bash
-	git clone https://github.com/free5gc/free5gc
+git clone https://github.com/free5gc/free5gc
 ``` 
-##Para a máquina do CORE
+## Para a máquina do CORE
 
 1. Entre no diretório do free5gc
 
-
-	cd free5gc
-
+```bash
+cd free5gc
+```
 
 2. Retire a upf do campo GO_NF (como mostra a figura abaixo):
 
