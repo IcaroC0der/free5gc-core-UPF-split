@@ -84,7 +84,7 @@ git clone https://github.com/free5gc/free5gc
 ``` 
 ## Para a máquina do CORE
 
-1. Entre no diretório do free5gc
+1. Entre no diretório do free5gc:
 
 ```bash
 cd free5gc
@@ -94,6 +94,11 @@ cd free5gc
 
 ![Topologia](./MAKEFILECORE.png)
 
+3. Rode o arquivo Makefile:
+
+```bash
+cd make
+```
 
 ## License
 
