@@ -81,7 +81,7 @@ OBS: Esse procedimento deve ser executados nas duas VM's
 
 ```bash
 	git clone https://github.com/free5gc/free5gc
-
+``` 
 ##Para a máquina do CORE
 
 1. Entre no diretório do free5gc
