@@ -32,7 +32,7 @@ configuration:
   nasTcpPort: 20000 # TCP port which the NAS listens on
 
   # --- Nwu Interfaces ---
-  ikeBindAddress: 172.16.2.100 # Nwu interface  IP address (IKE) on this N3IWF
+  ikeBindAddress: 10.0.0.4 # Nwu interface  IP address (IKE) on this N3IWF
   ipSecTunnelAddress: 10.0.0.1 # Tunnel IP address of XFRM interface on this N3IWF
   ueIpAddressRange: 10.0.0.0/24 # IP address pool allocated to UE in IPSec tunnel
   xfrmInterfaceName: xfrmi # Prefix of XFRM interface name created by N3IWF

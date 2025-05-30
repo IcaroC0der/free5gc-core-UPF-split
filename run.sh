@@ -4,7 +4,7 @@ LOG_PATH="./log/"
 LOG_NAME="free5gc.log"
 TODAY=$(date +"%Y%m%d_%H%M%S")
 PCAP_MODE=0
-N3IWF_ENABLE=0
+N3IWF_ENABLE=1
 TNGF_ENABLE=0
 
 PID_LIST=()
