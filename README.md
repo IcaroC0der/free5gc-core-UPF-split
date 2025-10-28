@@ -38,7 +38,7 @@ Este repositório é projetado para ser clonado em duas VMs (VM2 e VM3). As modi
 
 1.  Clone este repositório:
     ```bash
-    git clone [SEU_URL_DO_GITHUB] free5gc-core
+    git clone https://github.com/IcaroC0der/free5gc-core-UPF-split free5gc-CORE
     cd free5gc-core
     ```
 2.  Compile os NFs do Core:
@@ -47,7 +47,6 @@ Este repositório é projetado para ser clonado em duas VMs (VM2 e VM3). As modi
     ```
 3.  Execute o script do Core:
     ```bash
-    # (Use o script que você modificou para NÃO conter a UPF)
     ./run.sh
     ```
 
@@ -55,7 +54,7 @@ Este repositório é projetado para ser clonado em duas VMs (VM2 e VM3). As modi
 
 1.  Clone este repositório:
     ```bash
-    git clone [SEU_URL_DO_GITHUB] free5gc-upf
+    git clone https://github.com/IcaroC0der/free5gc-core-UPF-split free5gc-CORE
     cd free5gc-upf
     ```
 2.  Compile apenas a UPF:
@@ -64,7 +63,6 @@ Este repositório é projetado para ser clonado em duas VMs (VM2 e VM3). As modi
     ```
 3.  Execute o script da UPF:
     ```bash
-    # (Use o script que você criou para conter APENAS a UPF)
     sudo ./run_upf.sh
     ```
 
