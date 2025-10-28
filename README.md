@@ -2,14 +2,13 @@
 
 Este repositório contém os arquivos de configuração e scripts modificados do projeto [free5gc](https://github.com/free5gc/free5gc) para permitir a execução da UPF (User Plane Function) em uma máquina separada do Core Network.
 
-[cite_start]Este setup é parte de uma pesquisa de Iniciação Científica [cite: 2] [cite_start]focada em testes de ATSSS (Access Traffic Steering, Switching, and Splitting)[cite: 13, 15].
+Este setup é parte de uma pesquisa de Iniciação Científica focada em testes de ATSSS (Access Traffic Steering, Switching, and Splitting).
 
 ## 🗺️ Topologia da Arquitetura
 
 A arquitetura de rede virtualizada utilizada é a seguinte:
 
 ![Topologia da Rede](Topologia.png)
-*(Você precisará adicionar seu arquivo `Topologia.png` ao repositório para que esta imagem apareça)*
 
 * **VM1 - UE / RAN:** Simula o equipamento do usuário e a rede de acesso.
 * **VM2 - Core Network:** Executa as NFs do 5G Core (AMF, SMF, NRF, etc.).
@@ -69,4 +68,4 @@ Este repositório é projetado para ser clonado em duas VMs (VM2 e VM3). As modi
     sudo ./run_upf.sh
     ```
 
-[cite_start]Após estes passos, a SMF na VM2 deve conseguir estabelecer uma sessão PFCP com a UPF na VM3 através da rede `br-core-UPF`[cite: 86].
+Após estes passos, a SMF na VM2 deve conseguir estabelecer uma sessão PFCP com a UPF na VM3 através da rede `br-core-UPF`.
