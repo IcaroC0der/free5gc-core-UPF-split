@@ -61,6 +61,9 @@ configuration:
     upNodes: # information of userplane node (AN or UPF)
       gNB1: # the name of the node
         type: AN # the type of the node (AN or UPF)
+      N3IWF: 
+          type: AN # Nó de acesso 2 (Não-3GPP)
+          nodeID: 10.0.0.4 # IP do N3IWF (na VM2, conforme N3IWFCORE.png)
       UPF: # the name of the node
         type: UPF # the type of the node (AN or UPF)
         nodeID: 10.1.0.5   # IP da VM3
